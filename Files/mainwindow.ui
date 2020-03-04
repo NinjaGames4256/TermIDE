@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Consolas</family>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>TermIDE</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>601</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>250</horstretch>
+      <verstretch>250</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(230, 230, 230);
+background-color: rgb(25, 25, 25);
+letter-spacing: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>770</y>
+      <width>601</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(230, 230, 230);
+background-color: rgb(25, 25, 25);</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit_3">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>600</y>
+      <width>601</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(230, 230, 230);
+background-color: rgb(25, 25, 25);</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTermIDE">
+    <property name="title">
+     <string>TermIDE</string>
+    </property>
+    <addaction name="actionTheme"/>
+    <addaction name="actionInformation"/>
+   </widget>
+   <widget class="QMenu" name="menuRun">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="actionRun"/>
+    <addaction name="actionStop_2"/>
+    <addaction name="actionBuild"/>
+    <addaction name="separator"/>
+    <addaction name="actionFont"/>
+   </widget>
+   <widget class="QMenu" name="menuLanguage">
+    <property name="title">
+     <string>Language</string>
+    </property>
+    <addaction name="actionC"/>
+    <addaction name="actionSwift"/>
+    <addaction name="actionC_2"/>
+    <addaction name="actionC_3"/>
+    <addaction name="actionGo"/>
+   </widget>
+   <addaction name="menuTermIDE"/>
+   <addaction name="menuRun"/>
+   <addaction name="menuLanguage"/>
+  </widget>
+  <action name="actionC">
+   <property name="text">
+    <string>C</string>
+   </property>
+  </action>
+  <action name="actionC_2">
+   <property name="text">
+    <string>C++</string>
+   </property>
+  </action>
+  <action name="actionSwift">
+   <property name="text">
+    <string>Swift</string>
+   </property>
+  </action>
+  <action name="actionC_3">
+   <property name="text">
+    <string>C#</string>
+   </property>
+  </action>
+  <action name="actionGo">
+   <property name="text">
+    <string>Go</string>
+   </property>
+  </action>
+  <action name="actionStop">
+   <property name="text">
+    <string>Stop</string>
+   </property>
+  </action>
+  <action name="actionRun">
+   <property name="text">
+    <string>Run</string>
+   </property>
+  </action>
+  <action name="actionBuild">
+   <property name="text">
+    <string>Build</string>
+   </property>
+  </action>
+  <action name="actionStop_2">
+   <property name="text">
+    <string>Stop</string>
+   </property>
+  </action>
+  <action name="actionFont">
+   <property name="text">
+    <string>Font</string>
+   </property>
+  </action>
+  <action name="actionTheme">
+   <property name="text">
+    <string>Theme</string>
+   </property>
+  </action>
+  <action name="actionInformation">
+   <property name="text">
+    <string>Information</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
